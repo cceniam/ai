@@ -1,0 +1,16 @@
+spring:
+  ai:
+    ollama:
+      chat:
+        model: llama3.2
+      base-url: http://localhost:11434
+  datasource:
+    url: jdbc:postgresql://192.168.31.48:5433/ai
+    username: #
+    password: #
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
